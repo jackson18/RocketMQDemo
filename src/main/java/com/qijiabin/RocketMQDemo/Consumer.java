@@ -19,7 +19,7 @@ public class Consumer {
 
     public static DefaultMQPushConsumer getDefaultMQPushConsumer(){     
         if(initialState == 0){
-            consumer.setNamesrvAddr("172.17.42.1:9876");
+            consumer.setNamesrvAddr("192.168.1.17:9876");
             consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
             initialState = 1;
         }
